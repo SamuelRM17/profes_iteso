@@ -1,0 +1,19 @@
+.btn-guardar{
+    width: 100%;
+    padding:15px;
+    background-color: #91B4FF;
+    border:0;
+    box-sizing: border-box;
+    cursor:pointer;
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.btn-guardar:hover, .btn-guardar:active{
+    color:#fff;
+    background-color: #AAC7FF;
+    border-color: aquamarine;
+    
+}
