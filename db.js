@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const url = 'mongodb+srv://samuelromero:2Ln9Wz9iovRUOsm7@database.0lzwfzx.mongodb.net/'
+const url = 'mongodb+srv://samuelromero:2Ln9Wz9iovRUOsm7@database.0lzwfzx.mongodb.net/db_profesores';
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Error no se pudo conectar a MongoDB'));
