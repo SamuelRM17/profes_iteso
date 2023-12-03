@@ -51,7 +51,6 @@ module.exports.mostrar = async (req, res, next) => {
         }
       }
       
-
       const id = req.body.id_editar;
       const profesor = req.body.Profesor_editar;
       const telefono = req.body.Telefono_editar;
@@ -62,7 +61,6 @@ module.exports.mostrar = async (req, res, next) => {
 
       
       const actualizarProfesor = {};//Objeto para almacenar los campos a actualizar
-
       if (profesor) {
         actualizarProfesor.profesor = profesor;
       }

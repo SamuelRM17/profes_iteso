@@ -4,6 +4,15 @@ const bcrypt = require('bcryptjs');
 const bodyParser = require('body-parser');
 require('dotenv').config(); 
 const cookieParser = require('cookie-parser');
+const multer = require('multer');
+const upload = multer({ dest: 'uploads/' });
+
+// Analiza el cuerpo de las solicitudes entrantes
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+
+
 
 app.use(cookieParser());
 
@@ -55,6 +64,7 @@ app.get('/logout', (req, res) => {
     res.clearCookie('token');
     res.redirect('/');
   });
+
 
 app.listen(3000, () => {
     console.log('Servidor activo en http://localhost:3000');
