@@ -6,8 +6,6 @@ require('dotenv').config();
 const cookieParser = require('cookie-parser');
 const multer = require('multer');
 const upload = multer({ dest: 'uploads/' });
-
-// Analiza el cuerpo de las solicitudes entrantes
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
